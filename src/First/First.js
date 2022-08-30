@@ -8,6 +8,7 @@ function First(){
                         <a href="/#" className="a1__left">shop</a>
                         <a href="/#" className="a2__left">membership</a>
                         <a href="/#" className="a3__left">our story</a>
+                        <a href="/#" className="a4__left">/</a>
                     </div>
                     <div className="logo__header">
                         <img src={hausLogo} alt="logo"></img>
@@ -23,7 +24,7 @@ function First(){
                 <div className="page1__right">
                     <div className="txt__right">
                         <h1>Alcohol for the <br></br> modern drinker</h1>
-                        <p>Light and refreshing flavors made with real, clean ingredients you can <br></br>
+                        <p>Light and refreshing flavors made with real, clean ingredients you can 
                         feel good about. Just pour, sip, and enjoy.</p>
                     </div>
                     <a href="/#">shop all</a>

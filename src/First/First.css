@@ -32,6 +32,9 @@
     text-decoration: none;
     font-family: 'Roboto';
 }
+.a4__left{
+    display: none;
+}
 .a1__left:hover, .a2__left:hover,.a3__left:hover, .a1__right:hover, .a2__right:hover, .a3__right:hover{
     color: #000;
     transition: 2s;
@@ -73,6 +76,7 @@
 }
 .txt__right p{
     font-size: 18px;
+    width: 450px;
     line-height: 32px;
     color: #fff;
     font-weight: 400;
@@ -100,4 +104,74 @@
     transition:1s;
     background-color: #000;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1300px) {
+    .page1__right{
+        justify-content: center;
+    }
+    .txt__right h1{
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .txt__right p{
+        font-size: 14px;
+        width: 450px;
+        line-height: 20px;
+    }
+    .page1__right a{
+        width: 150px;
+        height: 42px;
+    }
+}
+@media only screen and (max-width: 1056px){
+    .page1__left{
+        display: none;
+    }
+    .page1__right{
+        width: 100%;
+        background-image: url('./img/picleft1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .a1__left, .a2__left, .a3__left, .a1__right, .a2__right, .a3__right{
+        margin-right: 35px;
+    }
+    .txt__right h1{
+        font-size: 48px;
+        text-shadow: 0px 0px 15px rgba(0,0,0,0.35);
+    }
+    .txt__right p{
+        font-size: 18px;
+        text-shadow: 0px 0px 15px rgba(0,0,0,0.35);
+    }
+    .page1__right a{
+        width: 160px;
+        height: 48px;
+        background-color:#996B60;
+        border: none;
+    }
+}
+@media only screen and (max-width:880px){
+    .a1__left, .a2__left, .a3__left, .a1__right, .a2__right, .a3__right{
+        display: none;
+    }
+    .a4__left{
+        font-size: 35px;
+        display: flex;
+        text-decoration: none;
+        color: #fff;
+    }
+    .a4__left:hover{
+        transition: 1s;
+        color: #996B60;
+    }
+    .txt__right p{
+        text-shadow: 0px 0px 15px rgba(0,0,0,0.9);
+    }
+}
+@media only screen and (max-width:500px){
+    .txt__right p{
+        width: 300px;
+    }
 }

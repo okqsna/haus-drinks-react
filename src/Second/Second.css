@@ -218,3 +218,39 @@
     transition: 2s;
     cursor: pointer;
 }
+@media only screen and (max-width: 1300px) {
+    .txt__page2 h2{
+        margin-top: 15px;
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .img__product1, .img__product2, .img__product3{
+        width: 281px;
+        height: 351px;
+    }
+    .txt__product1 h4, .txt__product2 h4,.txt__product3 h4{
+        font-size: 25px;
+    }
+    .txt__product1 p, .txt__product2 p, .txt__product3 p{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .info__product1 a, .info__product2 a, .info__product3 a{
+        width: 150px;
+        height: 45px;
+    }
+}
+@media only screen and (max-width:1100px){
+    .page2__wrapp{
+        height: 320vh;
+    }
+    .products__row{
+        flex-direction: column;
+    }
+    .product1__row, .product2__row, .product3__row{
+        margin-right: 0px;
+    }
+    .product2__row, .product3__row{
+        margin-top: 30px;
+    }
+}
