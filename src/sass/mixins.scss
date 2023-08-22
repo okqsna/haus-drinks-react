@@ -1,0 +1,17 @@
+@mixin size($width, $height){
+    width:$width;
+    height:$height;
+}
+@mixin flexBox($display, $flexDirection, $justifyContent, $alignItems){
+    display: $display;
+    flex-direction:$flexDirection;
+    justify-content:$justifyContent;
+    align-items: $alignItems;
+}
+@mixin fontSet($fontFamily, $fontSize, $fontStyle, $fontWeight, $fontColor){
+    font-family:$fontFamily;
+    font-size: $fontSize;
+    font-style: $fontStyle;
+    font-weight: $fontWeight;
+    color:$fontColor;
+}

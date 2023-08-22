@@ -1,0 +1,264 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
+
+.MainPage{
+    @include flexBox($displayFlex, column, "","");
+    background-color: $beige;
+    @include size(100%, 340vh);
+    .congrat__MainPage{
+        @include size(100%,100vh);
+        @include flexBox($displayFlex, column, center, center);
+        .row1__congrat__MainPage{
+            animation: fadeInDown; 
+            animation-duration: 2s; 
+            @include size(700px, 50px);
+            @include flexBox($displayFlex, row, flex-start, flex-start);
+            .img1__congrat__MainPage{
+                background-image: url('../../img/sparkle.svg');
+                @include size(50px, 49px);
+                background-size:cover;
+                background-repeat: no-repeat;
+            }
+        }
+        .txt__congrat__MainPage{
+            h3{
+                text-align: center;
+                margin:25px 0;
+                @include fontSet($fontTheSeasonsItalic, 80px, italic, 400, $black);
+                span{
+                    color:$hotpink;
+                }
+            }
+        }
+        .row2__congrat__MainPage{
+            animation: fadeInDown; 
+            animation-duration: 2s; 
+            @include size(700px, 50px);
+            @include flexBox($displayFlex, row, flex-end, flex-end);
+            .img2__congrat__MainPage{
+                background-image: url('../../img/sparkle.svg');
+                @include size(50px, 49px);
+                background-size:cover;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    .mainContent__MainPage{
+        @include size(100%,80vh);
+        @include flexBox($displayFlex, column, flex-start, center);
+        .txtMain__mainContent__MainPage{
+            animation: fadeInDown; 
+            animation-duration: 3s; 
+            @include flexBox($displayFlex, column, center, center);
+            .p1__txtMain{
+                margin-bottom: 3px;
+                @include fontSet($fontMontserratAlternates, 25px, normal, 500, $black);
+            }
+            .p2__txtMain{
+                text-align: center;
+                margin-bottom: 3px;
+                @include fontSet($fontMontserratAlternates, 25px, normal, 500, $black);
+                span{
+                    font-weight: 600;
+                }
+            }
+
+        }
+        .heartrow__mainContent__MainPage{
+            animation: fadeInUp; 
+            animation-duration: 8s; 
+            @include size(700px, 83px);
+            @include flexBox($displayFlex, row, flex-start, flex-start);
+            .img__heartrow__MainPage{
+                background-image: url('../../img/heart1.svg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                @include size(61.6px, 82.137px);
+            }
+        }
+        .addTxt__mainContent__MainPage{
+            margin-top: 30px;
+            animation: fadeInDown; 
+            animation-duration: 4s; 
+            p{
+                text-align: center;
+                @include fontSet($fontMontserratAlternates, 25px, normal, 500, $black);
+                span{
+                    color:$hotpink;
+                }
+            }
+        }
+    }
+    .addContent__MainPage{
+    @include size(100%,40vh);
+    @include flexBox($displayFlex, column, flex-start, center);
+    .p__addContent__MainPage{
+        text-align: center;
+        margin-bottom: 100px;
+        @include fontSet($fontMontserratAlternates, 25px, normal, 500, $black);
+        span{
+            color:$hotpink;
+        }
+    }
+    .countdown__addContent__MainPage{
+        p{
+            @include fontSet($fontTheSeasonsItalic, 45px, italic, 500, $black);
+            span{
+                font-family: $fontMontserratAlternates;
+                color:$hotpink;
+            }
+        }
+    }
+    }
+    .playlist__MainPage{
+        padding-top: 70px;
+        @include size(100%,95vh);
+        @include flexBox($displayFlex, column, flex-start, center);
+        .p__playlist__MainPage{
+            text-align: center;
+            @include fontSet($fontMontserratAlternates, 23px, normal, 500, $black);
+        }
+        .row__playlist__MainPage{
+            animation:fadeInDown;
+            animation-duration: 8s;
+             @include size(700px, 63px);
+            @include flexBox($displayFlex, row, flex-end, flex-end);
+            .img__row__playlist__MainPage{
+                background-image: url('../../img/heart2.svg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                @include size(50px,63px);
+            }
+        }
+    }
+    .creator__MainPage{
+        margin-top: 50px;
+        @include size(100%,10vh);
+        @include flexBox($displayFlex, column, flex-start, center);
+        p{
+            text-align: center;
+            line-height: 25px;
+            @include fontSet($fontTheSeasonsItalic, 20px, italic, 400, $black);
+        }
+    }
+}
+@media only screen and (max-width:760px){
+    .MainPage{
+        .congrat__MainPage{
+            .row1__congrat__MainPage, .row2__congrat__MainPage{
+                @include size(500px, 50px);
+            }
+        }
+        .mainContent__MainPage{
+            .heartrow__mainContent__MainPage{
+                @include size(500px, 83px);
+            }
+        }
+        .playlist__MainPage{
+            .row__playlist__MainPage{
+                @include size(500px, 63px);
+            }
+        }
+    }
+}
+@media only screen and (max-width:570px) {
+    .MainPage{
+        .congrat__MainPage{
+            .row1__congrat__MainPage, .row2__congrat__MainPage{
+                @include size(300px, 50px);
+            }
+            .txt__congrat__MainPage{
+                h3{
+                    font-size:50px;
+                }
+            }
+        }
+        .mainContent__MainPage{
+            .txtMain__mainContent__MainPage{
+                .p1__txtMain, .p2__txtMain{
+                    font-size: 20px;
+                }
+            }
+            .heartrow__mainContent__MainPage{
+                @include size(350px, 90px);
+                margin-top: 10px;
+            }
+            .addTxt__mainContent__MainPage{
+                p{
+                    font-size:20px;
+                }
+            }
+        }
+        .addContent__MainPage{
+            .p__addContent__MainPage{
+                font-size: 20px;
+            }
+            .countdown__addContent__MainPage{
+                p{
+                    font-size: 40px;
+                }
+            }
+        }
+        .playlist__MainPage{
+            .p__playlist__MainPage{
+                font-size: 20px;
+            }
+            .row__playlist__MainPage{
+                @include size(350px, 80px);
+            }
+        }
+    }
+}
+@media only screen and (max-width:420px) {
+    .MainPage{
+        @include size(100%, 315vh);
+        .congrat__MainPage{
+            @include size(100%, 90vh);
+            .row1__congrat__MainPage, .row2__congrat__MainPage{
+                @include size(270px, 50px);
+            }
+            .txt__congrat__MainPage{
+                h3{
+                    font-size: 40px;
+                }
+            }
+        }
+        .mainContent__MainPage{
+            @include size(100%, 70vh);
+            .txtMain__mainContent__MainPage{
+                .p1__txtMain, .p2__txtMain{
+                    font-size: 16px;
+                }
+            }
+            .heartrow__mainContent__MainPage{
+                @include size(290px, 90px);
+                margin-top: 10px;
+            }
+            .addTxt__mainContent__MainPage{
+                p{
+                    font-size:16px;
+                }
+            }
+        }
+        .addContent__MainPage{
+            @include size(100%, 30vh);
+            .p__addContent__MainPage{
+                font-size: 16px;
+            }
+            .countdown__addContent__MainPage{
+                p{
+                    font-size: 30px;
+                }
+            }
+        }
+        .playlist__MainPage{
+            .p__playlist__MainPage{
+                font-size: 16px;
+            }
+            .row__playlist__MainPage{
+                margin-bottom: 20px;
+                @include size(290px, 80px);
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'The Seasons Light Italic';
+  src: url('./fonts/fontspring-demo-theseasons-ltit-webfont.woff2') format('woff2'),
+       url('./fonts/fontspring-demo-theseasons-ltit-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'The Seasons Italic';
+  src: url('./fonts/fontspring-demo-theseasons-it-webfont.woff2') format('woff2'),
+       url('./fonts/fontspring-demo-theseasons-it-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'The Seasons Light';
+  src: url('./fonts/fontspring-demo-theseasons-lt-webfont.woff2') format('woff2'),
+       url('./fonts/fontspring-demo-theseasons-lt-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #F61067;
+  border-radius: 1px;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+}
